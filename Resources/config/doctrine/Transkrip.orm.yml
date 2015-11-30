@@ -1,0 +1,37 @@
+Ais\TranskripBundle\Entity\Transkrip:
+ type: entity
+ table: transkrip
+ id:
+  id: 
+   type: integer
+   generator: { strategy: AUTO }
+ fields:
+  nim:
+   type: string
+   length: 10
+   unique: true
+  nama:
+   type: string
+  no_seri:
+   type: string
+   nullable: true
+  tanggal_lulus:
+   type: date
+   nullable: true
+  tanggal_cetak:
+   type: date
+   nullable: true
+  judul_skripsi:
+   type: string
+   nullable: true
+  keterangan:
+   type: string
+   nullable: true
+  no_ijasah:
+   type: string
+   nullable: true
+  user_id:
+   type: integer
+  is_delete:
+   type: boolean
+   nullable: true
