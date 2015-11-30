@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'transkrip.list'|trans({}, 'AisTranskripBundle') }}</h1>
+
+    <ul id="transkrip-list">
+        {% for transkrip in transkrips %}
+            <li>
+                <a href="{{ path('api_1_get_transkrip', {'id': transkrip.id}) }}">{{ transkrip.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_transkrips', {'id': transkrip.id}) }}">{{ 'transkrip.edit.link'|trans({}, 'AisTranskripBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_transkrips', {'id': transkrip.id}) }}">{{ 'transkrip.remove.link'|trans({}, 'AisTranskripBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'transkrip.list.empty'|trans({}, 'AisTranskripBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_transkrip') }}">{{ 'transkrip.new.link'|trans({}, 'AisTranskripBundle') }}</a>
+    </p>
+{% endblock %}
