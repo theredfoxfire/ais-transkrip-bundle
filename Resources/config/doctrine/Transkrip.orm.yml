@@ -1,6 +1,7 @@
 Ais\TranskripBundle\Entity\Transkrip:
  type: entity
  table: transkrip
+ repositoryClass: Ais\TranskripBundle\Repository\TranskripRepository
  id:
   id: 
    type: integer
