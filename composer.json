@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/TranskripBundle",
+    "name" : "ais/transkripbundle",
     "description" : "A bundle filled with Transkrip",
     "type" : "symfony-bundle",
     "authors" : [{
